@@ -1,10 +1,11 @@
 /***
  * CSE 2010 Fall 2023
- * Lab #{n}
- * {Student Name} {Coyote ID}
- * {Date}
+ * Lab #{2}
+ * {Isaac cruz} {007964808}
+ * {9/27/2023}
  * 
- * {Description of lab AKA paraphrase "abstract" section from lab}
+ * {apply function prototypes that return different data types and objects or those that are void. They will implement a
+mix of pass by value and pass by reference calls}
  * 
  * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
  * the directions of how you PLAN to solve it}
