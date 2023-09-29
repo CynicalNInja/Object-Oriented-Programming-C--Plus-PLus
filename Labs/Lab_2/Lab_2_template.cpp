@@ -7,8 +7,13 @@
  * {apply function prototypes that return different data types and objects or those that are void. They will implement a
 mix of pass by value and pass by reference calls}
  * 
- * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
- * the directions of how you PLAN to solve it}
+ * {Describe 1) what was most challenging 
+ * 
+ * getting github to work seen i came along with some issues installing it and pathing it
+ * 
+ * 2) how you solved/overcame the problem OR the directions of how you PLAN to solve it} * 
+ * 
+ * rewatch video and look for important steps that i may have miss out 
  * 
 ***/
 
