@@ -30,6 +30,16 @@ using namespace std;
  */
 // write power function here
 
+int power(int base,int exponent){
+    int power_output = 1;
+    for(int i = 0; i < exponent; i++){
+        power_output *= base;
+    }
+    return power_output;
+}
+
+
+
 /**
  * @brief floorDivision(): calculates and returns the dividend / divisor using for loops
  * 
@@ -39,6 +49,16 @@ using namespace std;
  */
 // write floorDivision function here
 
+int floorDivision(int dividend, int divisor ){
+    int floor_div_output = 0; 
+    while (dividend - divisor >= 0) {
+        dividend -= divisor; // dividend = dividend - divisor;
+        floor_div_output += 1;
+    }
+    return floor_div_output;
+}
+
+
 /**
  * @brief modDivision(): returns the remainder from dividend / divisor
  * 
@@ -47,6 +67,17 @@ using namespace std;
  * @return int 
  */
 // write modDivision function here
+
+
+int modDivision(int dividend, int divisor){
+    int mod_output = dividend;
+    while (mod_output - divisor >= 0){
+        mod_output -= divisor; // dividend = dividend - divisor;
+    }
+    return mod_output;
+}
+
+
 
 /**
  * @brief print(): prints out the statement "Output of {operation} between {x} 
@@ -59,6 +90,13 @@ using namespace std;
  * @param output int: output from conducting the operaiton
  */
 // write print function here
+
+void print(string operation, int x, int y, int output){
+    cout << "Output of " << operation << "between " << x << " and " << \
+    y << " is : " << mod_output << endl;
+
+}
+
 
 
 /**
@@ -74,6 +112,23 @@ using namespace std;
  */
 // write op function here
 
+string operation(int selection){
+    if (selection == 1){
+        return "power";
+    } else if (selection == 2){ 
+        return "floorDivision";
+    } else if (selection == 3) {
+        return "modDivision";
+    } else {
+        return "invalid";
+    }
+ }
+
+
+
+
+
+
 
 int main()
 {   
@@ -84,14 +139,10 @@ int main()
     int base = x;
     int exponent = y;
     // power 
-    int power_output = 1;
-    for(int i = 0; i < exponent; i++){
-        power_output *= base;
-    }
+    int power_output = power(base, exponent);
     // print
-    string operation = "power";
-    cout << "Output of " << operation << " between " << base << " and " << \
-    exponent <<  " is : " << power_output << endl;
+string operation = operation(1);
+print(operation,x, y, output);
 
     // test input for floor and modulos
     x = 65;
@@ -100,15 +151,10 @@ int main()
     // floor division
     int dividend = x;
     int divisor = y;
-    int floor_div_output = 0; 
-    while (dividend - divisor >= 0) {
-        dividend -= divisor; // dividend = dividend - divisor;
-        floor_div_output += 1;
-    }
+    int floor_div_output = floorDivision(dividend, divisor); 
     //print
-    operation = "floorDivision";
-    cout << "Output of " << operation << " between " << x << " and " << \
-    y <<  " is : " << floor_div_output << endl;
+string operation = operation(2);
+print(operation,x, y, output);
 
     // reset test input for modulos division
     // for Section 5.2 where pass by reference is use, do NOT reset 
@@ -116,12 +162,9 @@ int main()
     dividend = x;
     divisor = y;
     // modulos division
-    int mod_output = dividend;
-    while (mod_output - divisor >= 0) {
-        mod_output -= divisor; // dividend = dividend - divisor;
-    }
+    int mod_output = modDivision(dividend, divisor);
     //print
     operation = "modDivision";
-    cout << "Output of " << operation << " between " << x << " and " << \
-    y <<  " is : " << mod_output << endl;
+string operation = operation(3);
+print(operation,x, y, output);
 }
