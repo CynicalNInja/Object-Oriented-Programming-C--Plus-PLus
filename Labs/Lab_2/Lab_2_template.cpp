@@ -93,7 +93,7 @@ int modDivision(int dividend, int divisor){
 
 void print(string operation, int x, int y, int output){
     cout << "Output of " << operation << "between " << x << " and " << \
-    y << " is : " << mod_output << endl;
+    y << " is : " << output << endl;
 
 }
 
@@ -161,10 +161,8 @@ print( op , floor_div_output , dividend , divisor ) ;
     dividend = x;
     divisor = y;
     // modulos division
-    int mod_output = modDivision(dividend, divisor);
+    int mod_output = modDivision( dividend, divisor);
     //print
-    operation = "modDivision";
-int mod_output = modDivision ( dividend , divisor ) ;
 op = operation (3) ;
 print( op , mod_output , dividend , divisor ) ;
 }
