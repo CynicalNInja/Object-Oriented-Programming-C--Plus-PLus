@@ -10,11 +10,11 @@ mix of pass by value and pass by reference calls}
  * {Describe 1) what was most challenging 
  * 
  * getting github to work seen i came along with some issues installing it and pathing it
- * 
+ * trying to solve these 2 errors 
  * 2) how you solved/overcame the problem OR the directions of how you PLAN to solve it} * 
  * 
  * rewatch video and look for important steps that i may have miss out 
- * 
+ * havernt been able to solve the errors 
 ***/
 
 #include <iostream>
@@ -141,8 +141,8 @@ int main()
     // power 
     int power_output = power(base, exponent);
     // print
-string operation = operation(1);
-print(operation,x, y, output);
+string op = operation (1) ;
+print( op , power_output , base , exponent ) ;
 
     // test input for floor and modulos
     x = 65;
@@ -153,9 +153,8 @@ print(operation,x, y, output);
     int divisor = y;
     int floor_div_output = floorDivision(dividend, divisor); 
     //print
-string operation = operation(2);
-print(operation,x, y, output);
-
+op = operation (2) ;
+print( op , floor_div_output , dividend , divisor ) ;
     // reset test input for modulos division
     // for Section 5.2 where pass by reference is use, do NOT reset 
     // divend and divisor to x and y in order to get the example 
@@ -165,6 +164,7 @@ print(operation,x, y, output);
     int mod_output = modDivision(dividend, divisor);
     //print
     operation = "modDivision";
-string operation = operation(3);
-print(operation,x, y, output);
+int mod_output = modDivision ( dividend , divisor ) ;
+op = operation (3) ;
+print( op , mod_output , dividend , divisor ) ;
 }
