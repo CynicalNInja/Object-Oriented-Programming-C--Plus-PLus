@@ -1,10 +1,14 @@
 /***
  * CSE 2010 Fall 2023
- * Lab #{n}
- * {Student Name} #{Coyote ID}
- * {Date}
+ * Lab #{3}
+ * {isaac cruz} #{007964808}
+ * {10/13/2023}
  *
- * {Description of lab AKA paraphrase "abstract" section from lab}
+ * {Students will create their own class object. They will 1) create their class interface within
+a header file, 2) implement their member functions within a .cpp file, and 3) test their class
+within a main file. They will learn about private variables and ways to manipulate them
+using mutator functions and access them via accessor functions with respect to scope. Lastly,
+students will learn to link their files together.}
  *
  * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
  * the directions of how you PLAN to solve it}
@@ -24,6 +28,11 @@ using namespace std;
  * Person.h -> contains the interface, declarations of the class, and  includes 
  * the private variables and member functions
  */
+
+
+
+
+
 
 /**
  *  Following the examples below, create your own class objects that calls ALL
