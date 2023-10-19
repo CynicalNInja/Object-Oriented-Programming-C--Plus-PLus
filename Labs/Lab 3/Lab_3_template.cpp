@@ -10,8 +10,14 @@ within a main file. They will learn about private variables and ways to manipula
 using mutator functions and access them via accessor functions with respect to scope. Lastly,
 students will learn to link their files together.}
  *
- * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
- * the directions of how you PLAN to solve it}
+ * {Describe 1) what was the most challenging 
+ * 
+ *  it was the complining part at first and then the " marks on on the print part"
+ *  
+ * 2) how you solved/overcame the problem OR
+ * the directions of how you PLAN to solve it} 
+ * 
+ *  watching the videos help me solved it 
  *
 ***/
 
