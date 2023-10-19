@@ -17,7 +17,7 @@
  * 
  *  For example, void Person::updateName(...).
  * 
- *  Not the only some part of moveLocation() and isOlderThan() are included. This was
+ *  Note that only some part of moveLocation() and isOlderThan() are included. This was
  *  so the comments could be neatly placed to explain what they do. 
  *  
  *  Make sure to include comments before the functions similar to Lab 2.
@@ -80,6 +80,27 @@ void Person::updateName(string new_name)
 }
 
 /**
+ * @brief changes to new age
+ * 
+ * @param new_age 
+ */
+void Person::updateAge(int new_age)
+{
+    age = new_age;
+}
+
+/**
+ * @brief changes occupation to new occupation 
+ * 
+ * @param new_occupation (string)
+ */
+void Person::updateOccupation(string new_occupation)
+{
+    occupation = new_occupation;  
+}
+
+
+/**
  * @brief changes if the person is from the IE to not from the IE 
  * and vice versa
  * For example, if is_from_IE was true, it is updated to false.
@@ -87,7 +108,12 @@ void Person::updateName(string new_name)
  */
 void Person::movedLocation()
 {
-
+    if (lives_in_IE == true){
+        lives_in_IE =  false;
+    } else {
+        lives_in_IE = true;
+    } 
+   // lives_in_IE = not lives_in_IE; (uses bool instead ,yes or no switch)
 }
 
 
@@ -100,7 +126,36 @@ string Person::getName() const{
     return name;
 }
 
+/**
+ * @brief return age of person object
+ * 
+ * @return int 
+ */
+int Person::getAge() const 
+{
+    return age;
+}
 
+/**
+ * @brief returns occupation of the person object 
+ * 
+ * @return string 
+ */
+string Person::getOccupation() const 
+{
+    return occupation;
+}
+
+/**
+ * @brief returns whether they live in the IE
+ * 
+ * @return true : they live in the IE 
+ * @return false : they do not live in IE
+ */ 
+bool Person::getLivesInIE() const 
+{
+    return lives_in_IE;
+}
 
 /**
  * @brief Compares the age of person b with the implicit Person class.
@@ -111,5 +166,9 @@ string Person::getName() const{
  */
 bool Person::isOlderThan(Person b) const
 {
-    return false; // you should modify this
-}
+   if (age > b.getAge()){
+    return true;
+   } else {
+    return false;
+   }
+   }
