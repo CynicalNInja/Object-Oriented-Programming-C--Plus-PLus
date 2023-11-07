@@ -1,4 +1,4 @@
-#include "ArrayVec.h"
+ #include "ArrayVec.h"
 
 /**
  * @brief Default Constuctor
