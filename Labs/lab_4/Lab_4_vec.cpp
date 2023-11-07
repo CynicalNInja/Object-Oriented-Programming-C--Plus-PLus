@@ -1,10 +1,14 @@
 /***
  * CSE 2010 Fall 2023
- * Lab #{n}
- * {Student Name} #{Coyote ID}
- * {Date}
+ * Lab #{4}
+ * {isaac cruz} #{007964808}
+ * {10/30/2023}
  *
- * {Description of lab AKA paraphrase "abstract" section from lab}
+ * {Students will learn how to organize data using the data structures, arrays and vectors (i.e.
+dynamic arrays). They will learn the similarities and differences between the two in terms of
+how they contain, access, and updates element as well as to how to pass them into functions.
+Students will understand how these data structures allocate memory and their relation to
+pointers.   }
  *
  * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
  * the directions of how you PLAN to solve it}
@@ -21,12 +25,18 @@ using namespace std;
 int main()
 {
     // initialize vec
+    vector<int> v;
+    // const int CAPACITY = 10; 
+    //vector<int> v(CAPACITY); 
 
     //initialize ArrayVec and DisplayVec
-
-
+    DisplayVec disp = Display(); 
+    ArrayVec av = ArrayVec();
+    
     // populate with values
-
+    int range = 15; 
+    int num_elem = 10; 
+    av.randGenVec(v, num_elem, range);
     // display contents
 
 }
