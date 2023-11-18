@@ -19,7 +19,7 @@ ArrayVec::ArrayVec()
  */
 void ArrayVec::randGenArr(int arr[], int n, int exclusive_range){
     for(int i = 0; i < n; i++){
-        arr[i] = rand() % exclusive_range; 
+        arr[i] = rand() % exclusive_range;
     }
 }
 
@@ -33,8 +33,8 @@ void ArrayVec::randGenArr(int arr[], int n, int exclusive_range){
  */
 void ArrayVec::randGenVec(vector<int> & v, int n, int exclusive_range){
     for(int i = 0; i < n; i++){
-        v[i] = rand() % exclusive_range;
-        //v.push_back(rand() % exlusive_range)
+        // v[i] = rand() % exclusive_range;
+        v.push_back(rand() % exclusive_range);
     }
 }
 /**

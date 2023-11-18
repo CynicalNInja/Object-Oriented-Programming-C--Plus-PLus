@@ -29,7 +29,7 @@ for(int i = 0; i < v.size(); i++){
 int DisplayVec::getVectMemSize(const vector<int> v){
     int mem_size = 0; 
     for(int i = 0; i < v.size(); i++){
-        mem_size += size(v[i]); //mem_size = mem_size + sizeof(v[i])
+        mem_size += sizeof(v[i]); //mem_size = mem_size + sizeof(v[i])
     }
     return mem_size;
 }

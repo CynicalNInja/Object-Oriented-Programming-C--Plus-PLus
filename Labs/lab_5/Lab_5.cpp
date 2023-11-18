@@ -1,10 +1,12 @@
 /***
  * CSE 2010 Fall 2023
- * Lab #{n}
- * {Student Name} #{Coyote ID}
- * {Date}
+ * Lab #{5}
+ * {isaac cruz} #{007964808}
+ * {11/17/2023}
  *
- * {Description of lab AKA paraphrase "abstract" section from lab}
+ * {Students will learn how to iterate through arrays and/or vectors to search for elements.
+They will monitor the computation time and graph their findings. Students will analyze the
+Big-O time in order to benchmark their search algorithms}
  *
  * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
  * the directions of how you PLAN to solve it}

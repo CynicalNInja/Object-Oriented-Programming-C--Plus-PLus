@@ -30,7 +30,7 @@ int main()
     vector<int> test_vec(CAPACITY); 
 
     //initialize ArrayVec and DisplayVec
-    DisplayVec disp = Display(); 
+    DisplayVec disp = DisplayVec(); 
     ArrayVec av = ArrayVec();
     
     // populate with values
