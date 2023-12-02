@@ -1,10 +1,13 @@
 /***
  * CSE 2010 Fall 2023
- * Lab #{n}
- * {Student Name} #{Coyote ID}
- * {Date}
+ * Lab #{6}
+ * {isaac cruz} #{007964808}
+ * {11/27/2023}
  *
- * {Description of lab AKA paraphrase "abstract" section from lab}
+ * {Students will learn how to derive a class from a base class and understand how member
+functions and variables can be passed down to the derived class. They will learn how to apply
+virtual and overloaded functions in order to practice polymorphism. Students will create UML
+diagrams to connect classes and visualize their member functions and variables together}
  *
  * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
  * the directions of how you PLAN to solve it}

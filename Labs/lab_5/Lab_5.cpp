@@ -8,7 +8,7 @@
 They will monitor the computation time and graph their findings. Students will analyze the
 Big-O time in order to benchmark their search algorithms}
  *
- * {bin run not being define so going to monday extra credbit lab to find how out to include it}
+ * {bin run not being define so going to monday extra credbit lab to find how out to include it and the outputs having constant 0 outputs.  }
  *
 ***/
 
