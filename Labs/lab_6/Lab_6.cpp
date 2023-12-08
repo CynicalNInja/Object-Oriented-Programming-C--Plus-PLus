@@ -9,8 +9,7 @@ functions and variables can be passed down to the derived class. They will learn
 virtual and overloaded functions in order to practice polymorphism. Students will create UML
 diagrams to connect classes and visualize their member functions and variables together}
  *
- * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
- * the directions of how you PLAN to solve it}
+ * {nothing this time seeem hard , it was a bit morree on thee simpleer hand of things.}
  *
 ***/
 
