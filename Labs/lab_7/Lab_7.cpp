@@ -9,9 +9,7 @@
 previous classes to have members that can hold and process through various data types. They
 will learn the difference between implicit and explicit instantiations}
 *
-* {Describe 1) what was most challenging and 2) how you solved/overcame the
-problem OR
-* the directions of how you PLAN to solve it}
+* {had a issue with getarray and another parft not being defined because i forget to replace int with t}
 *
 ***/
 #include <iostream>
@@ -22,11 +20,12 @@ int main()
 {
     // initialize arr
     const int CAPACITY = 10;
-    int test_arr[CAPACITY];
+    double test_arr[CAPACITY];
 
+    string data_type = "float";
     //initialize ArrayVec and DisplayArr
-    DisplayArr disp = DisplayArr();
-    ArrayVec av = ArrayVec();
+    DisplayArr<double> disp = DisplayArr<double>(data_type);
+    ArrayVec<double> av = ArrayVec<double>();
 
     // populate with values
     int range = 15;

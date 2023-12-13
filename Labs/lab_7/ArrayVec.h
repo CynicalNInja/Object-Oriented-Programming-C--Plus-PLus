@@ -5,12 +5,14 @@
 #include <cstdlib>
 using namespace std;
 
+template<typename T>
 class ArrayVec {
     public:
         ArrayVec();
-        void randGenArr(int arr[], int n, int exclusive_range);
-        void randGenVec(vector<int> & v, int n, int exlcusive_range);
-        int getSize(const int arr[], int cap);
+        void randGenArr(T arr[], int n, int exclusive_range);
+        void randGenVec(vector<T> & v, int n, int exlcusive_range);
+        int getSize(const T arr[], int cap);
     private:
 };
 #endif
+ 

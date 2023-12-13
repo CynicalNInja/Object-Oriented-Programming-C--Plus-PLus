@@ -4,16 +4,19 @@
 /**
  * @brief Construct a new Display:: Display object
  *
- */
-DisplayArr::DisplayArr(){
+ */ 
+template<typename T>
+DisplayArr<T>::DisplayArr(string data_type){ 
+    this->data_type = data_type;
 }
 /**
  * @brief prints the integers in the arr
  *
  * @param arr
  * @param size
- */
-void DisplayArr::printArray(const int * arr, int size){
+ */ 
+template<typename T>
+void DisplayArr<T>::printArray(const T * arr, int size){
     for(int i = 0; i < size; i++){
         cout << arr[i] << endl;
     }
@@ -25,8 +28,9 @@ void DisplayArr::printArray(const int * arr, int size){
  * @param arr
  * @param size
  * @return float
- */
-int DisplayArr::getArrMemSize(const int arr[], int size){
+ */ 
+template<typename T>
+int DisplayArr<T>::getArrMemSize(const T arr[], int size){
     int mem_size = 0;
     for (int i = 0; i < size; i++){
         mem_size += sizeof(arr[i]);
@@ -39,9 +43,10 @@ int DisplayArr::getArrMemSize(const int arr[], int size){
  * @param arr
  * @param index
  * @return const int*
- */
-const int * DisplayArr::getAddress(int arr[], int index){
-    int* addr =  &arr[index];
+ */ 
+template<typename T>
+const T * DisplayArr<T>::getAddress(T arr[], int index){
+    T * addr =  &arr[index];
     return addr;
 }
 
@@ -51,13 +56,19 @@ const int * DisplayArr::getAddress(int arr[], int index){
  *
  * @param arr
  * @param size
- */
-void DisplayArr::printMetaArray(int arr[], int size){ // what happens when Display:: is removed?
+ */ 
+template<typename T>
+void DisplayArr<T>::printMetaArray(T arr[], int size){ // what happens when Display:: is removed?
     int mem_size = getArrMemSize(arr, size);
     int int_size = sizeof(arr[0]);
-    printf("Array has %i number of integers. Each integer is worth %i bytes, totaling up to %i bytes of memory.\n", size, int_size, mem_size);
+    printf("Array has %i number of %s. %s is worth %i bytes, totaling up to %i bytes of memory.\n", size, data_type.c_str(), data_type.c_str(), int_size, mem_size);
     printf("Element at index %i is located at (%p)\n", 0, getAddress(arr, 0));
     printf("Element at index %i is located at (%p)\n", 1, getAddress(arr, 1));
     printf("Element at index %i is located at (%p)\n", size-1 ,getAddress(arr, size-1));
 
 }
+
+// explicit instantiations for linking 
+template class DisplayArr <int >;
+template class DisplayArr <float >;
+template class DisplayArr <double >;
